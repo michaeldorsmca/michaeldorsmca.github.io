@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="app.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <p style="line-height: 1; padding-left:0px;">Schedule for</p>
+            <h1 style="line-height: 1;" id="name">Michael Dors</h1>
+            
+        </div>
+        <div class="class">
+            <div style="float: left;">
+                <h1 style="padding-top:40px; padding-left:40px;">Period 1</h1>
+                <h1 style="font-size:60px; padding-left:40px;">Geometry <span class="honorstag">Honors</span></h1>
+                <p id="regulartiming1">08:15 AM to 09:03 AM</p>
+                <a role="button" onclick="NextClass()">Next</a>
+                <a role="button" class="backbutton" onclick="BackToBottom()">End</a>
+                <a role="button" class="backbutton" onclick="SaveText()">Save</a>
+
+            </div>
+            <div style="float: right; margin-right:25px; margin-top:25px;" class="classwork">
+                <h1 style="padding-top:15px;padding-left: 15px; color:black">Classwork</h1>
+                <textarea id="mathhw" class="classworkform"></textarea>
+            </div>
+        </div>
+        <div class="class active">
+            <div style="float: left;">
+                <h1 style="padding-top:40px; padding-left:40px;">Period 2</h1>
+                <h1 style="font-size:60px; padding-left:40px;">Worship Band</h1>
+                <p id="regulartiming2">09:06 AM to 09:50 AM</p>
+                <a role="button" onclick="NextClass()">Next</a>
+                <a role="button" class="backbutton" onclick="LastClass()">Back</a>
+            </div>
+            <div style="float: right; margin-right:25px; margin-top:25px;" class="classwork">
+                <h1 style="padding-top:15px;padding-left: 15px; color:black">Notes</h1>
+                <textarea id="bandhw" class="classworkform"></textarea>
+            </div>
+        </div>
+        <div class="class">
+            <div style="float: left;">
+                <h1 style="padding-top:40px; padding-left:40px;">Period 3</h1>
+                <h1 style="font-size:60px; padding-left:40px;">Spanish II</h1>
+                <p id="regulartiming3">09:53 AM to 10:37 AM</p>
+                <a role="button" onclick="NextClass()">Next</a>
+                <a role="button" class="backbutton" onclick="LastClass()">Back</a>
+            </div>
+            <div style="float: right; margin-right:25px; margin-top:25px;" class="classwork">
+                <h1 style="padding-top:15px;padding-left: 15px; color:black">Classwork</h1>
+                <textarea id="spanhw" class="classworkform"></textarea>
+            </div>
+        </div>
+        <div class="class">
+            <div style="float: left;">
+                <h1 style="padding-top:40px; padding-left:40px;">Period 4</h1>
+                <h1 style="font-size:60px; padding-left:40px;">Bible</h1>
+                <p id="regulartiming4">10:40 AM to 11:24 AM</p>
+                <a role="button" onclick="NextClass()">Next</a>
+                <a role="button" class="backbutton" onclick="LastClass()">Back</a>
+            </div>
+            <div style="float: right; margin-right:25px; margin-top:25px;" class="classwork">
+                <h1 style="padding-top:15px;padding-left: 15px; color:black">Classwork</h1>
+                <textarea id="biblehw" class="classworkform"></textarea>
+            </div>
+        </div>
+        <div class="class">
+            <div style="float: left;">
+                <h1 style="padding-top:40px; padding-left:40px;">Period 5</h1>
+                <h1 style="font-size:60px; padding-left:40px;">Bio</h1>
+                <p id="regulartiming5">11:27 AM to 12:11 PM</p>
+                <a role="button" onclick="NextClass()">Next</a>
+                <a role="button" class="backbutton" onclick="LastClass()">Back</a>
+            </div>
+            <div style="float: right; margin-right:25px; margin-top:25px;" class="classwork">
+                <h1 style="padding-top:15px;padding-left: 15px; color:black">Classwork</h1>
+                <textarea id="biohw" class="classworkform"></textarea>
+            </div>
+        </div>
+        <div class="class">
+                <h1 style="padding-top:40px; padding-left:40px;">Lunch 9/10</h1>
+                <h1 style="font-size:60px; padding-left:40px;">Break</h1>
+                <p id="regulartiming6">12:14 PM to 12:39 PM</p>
+                <a role="button" onclick="NextClass()">Next</a>
+                <a role="button" class="backbutton" onclick="LastClass()">Back</a>
+        </div>
+        <div class="class">
+            <div style="float: left;">
+                <h1 style="padding-top:40px; padding-left:40px;">Period 6</h1>
+                <h1 style="font-size:60px; padding-left:40px;">History</h1>
+                <p id="regulartiming7">12:42 PM to 1:26 PM</p>
+                <a role="button" onclick="NextClass()">Next</a>
+                <a role="button" class="backbutton" onclick="LastClass()">Back</a>
+            </div>
+            <div style="float: right; margin-right:25px; margin-top:25px;" class="classwork">
+                <h1 style="padding-top:15px;padding-left: 15px; color:black">Classwork</h1>
+                <textarea id="historyhw" class="classworkform"></textarea>
+            </div>
+        </div>
+        <div class="class">
+            <div style="float: left;">
+                <h1 style="padding-top:40px; padding-left:40px;">Period 7</h1>
+                <h1 style="font-size:60px; padding-left:40px;">Study Hall</h1>
+                <p id="regulartiming8">1:29 PM to 2:13 PM</p>
+                <a role="button" onclick="NextClass()">Next</a>
+                <a role="button" class="backbutton" onclick="LastClass()">Back</a>
+            </div>
+            <div style="float: right; margin-right:25px; margin-top:25px;" class="classwork">
+                <h1 style="padding-top:15px;padding-left: 15px; color:black">Notes</h1>
+                <textarea id="hallhw" class="classworkform"></textarea>
+            </div>
+        </div>
+        <div class="class">
+            <div style="float: left;">
+                <h1 style="padding-top:40px; padding-left:40px;">Period 8</h1>
+                <h1 style="font-size:60px; padding-left:40px;">Intro To Lit <span class="honorstag">Honors</span></h1>
+                <p id="regulartiming9">2:16 PM to 3:00 PM</p>
+                <a role="button" onclick="NextClass()">Finish</a>
+                <a role="button" class="backbutton" onclick="LastClass()">Back</a>
+            </div>
+            <div style="float: right; margin-right:25px; margin-top:25px;" class="classwork">
+                <h1 style="padding-top:15px;padding-left: 15px; color:black">Classwork</h1>
+                <textarea id="lithw" class="classworkform"></textarea>
+            </div>
+        </div>
+        <div class="class">
+            <h1 style="padding-top:40px; padding-left:40px;">Finished</h1>
+            <h1 style="font-size:60px; padding-left:40px;">Day Complete</h1>
+            <p id="regulartiming9">3:00PM</p>
+            <a role="button" onclick="BackToTop()">Restart</a>
+            <a role="button" class="backbutton" onclick="LastClass()">Back</a>
+        </div>
+        <div class="header" style="margin-top:200px;">
+            <p style="line-height: 1; padding-left:0px;">Day Complete</p>
+            <h1 style="line-height: 1;" id="name">Congrats</h1>
+        </div>
+    </body>
+</html>

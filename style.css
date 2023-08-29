@@ -1,0 +1,167 @@
+*{
+    color: white;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin:0px;
+}
+body{
+  background:linear-gradient(to bottom, #000000, #ffcc00);
+    overflow-y:hidden;
+}
+.bodyalt{
+  background:linear-gradient(to bottom, #cc00ff, #0073ff, #00ff44, #ffcc00, #ffcc00);
+}
+.header{
+    padding-left:20px;
+    padding-top:20px;
+    width: calc(100vw - 20px);
+    background: rgba(0, 0, 0, 0.79);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    height:60px;
+}
+.class{
+    margin-top:100px;
+    margin-left: 100px;
+    width: calc(100vw - 200px);
+    background: rgba(0, 0, 0, 0.79);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    height:60px;
+    border-radius: 50px;
+    height:300px;
+}
+
+a{
+    margin-left:40px;
+    margin-top:50px;
+    font-size:30px;
+    align-items: center;
+    appearance: none;
+    background-color: #ffcc00;
+    background-image: linear-gradient(1deg, #ff9500, #ffcc00 99%);
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: #000000 5 5 10 .5em;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: CircularStd,sans-serif;
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 12px 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s,background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+a:active,
+a:focus {
+  outline: none;
+}
+
+a:hover {
+  background-position: -20px -20px;
+}
+
+a:focus:not(:active) {
+  box-shadow: #ffcc00 0 0 0 .125em;
+}
+p{
+  padding-left:40px;
+}
+
+
+
+.backbutton{
+  margin-left:15px;
+  margin-top:50px;
+  font-size:30px;
+  align-items: center;
+  appearance: none;
+  background-color: transparent;
+  background-image: linear-gradient(1deg, rgba(0,0,0,0), rgba(255, 166, 0, 0.2) 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border: 2px solid #ffcc00;
+  box-shadow: #000000 5 5 10 .5em;
+  box-sizing: border-box;
+  color: #ffcc00;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 10px 40px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+
+
+a:active,
+a:focus {
+outline: none;
+}
+
+a:hover {
+background-position: -20px -20px;
+}
+
+a:focus:not(:active) {
+box-shadow: #ffcc00 0 0 0 .125em;
+}
+p{
+padding-left:40px;
+}
+
+.honorstag{
+  position: relative;
+  background: linear-gradient(to bottom right, #ff9500, #ffcc00);
+  padding-left:6px;
+  padding-right: 6px;
+  top: -10px;
+  left:10px;
+  border-radius: 10px;
+  font-size: 30px;
+  color: #000;
+}
+
+.classwork{
+  border-radius: 30px;
+  width:750px;
+  height:250px;
+  background: linear-gradient(to bottom right, #ff9500, #ffcc00);
+}
+
+.classworkform{
+  background:black;
+  color:white;
+  border:1px solid #141414;
+  height:165px;
+  width:710px;
+  margin-left:20px;
+  margin-top:10px;
+  border-radius: 20px;
+  text-align: left;
+  padding:10px;
+  font-family: CircularStd,sans-serif;
+  font-size: 17px;
+}
